@@ -37,6 +37,6 @@ io.on('connection', socket => {
 });
 
 // 5. Start the HTTP server and have it listen on the specified port.
-httpServer.listen(PORT, () => {
+httpServer.listen(PORT, '0.0.0.0', () => {
   console.log(`Server listening on port ${PORT}`);
 });
