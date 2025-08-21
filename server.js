@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 //    We also configure CORS here to allow our frontend (running on a different origin) to connect.
 const io = new Server(httpServer, {
   cors: {
-    origin: "*", // Allow connections from any origin. For production, you might want to restrict this.
+    origin: "https://eliab2-e.github.io", // Allow connections from any origin. For production, you might want to restrict this.
     methods: ["GET", "POST"]
   }
 });
